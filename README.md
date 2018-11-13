@@ -1,4 +1,4 @@
-https://zx-pk.ru/threads/10718-soft-dlya-dvk-pdp11.html?p=932386&viewfull=1#post932386# UKNC_upgrades
+# UKNC_upgrades
 Hardware extensions for UKNC (Soviet PDP-11 compatible machine)
 
 Репозирорий создан как хранилище информации по аппаратным расширениям сделанным/разрабатываемых
