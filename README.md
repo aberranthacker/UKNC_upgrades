@@ -27,22 +27,22 @@ Hardware extensions for UKNC (Soviet PDP-11 compatible machine)
 
 ### Тест скорости записи в память:
 ```
-xxxx00    012700 MOV    #100, R0
-xxxx02    000100
-xxxx04    005001 CLR    R1       ; <---+
-xxxx06    012702 MOV    #1100,R2 ;     |
-xxxx10    001100/170000          ;     |
-xxxx12 0(1)10112 MOV(B) R1, (R2) ; <-+ |
-xxxx14 0(1)10112 MOV(B) R1, (R2) ;   | |
-xxxx16 0(1)10112 MOV(B) R1, (R2) ;   | |
-xxxx20 0(1)10112 MOV(B) R1, (R2) ;   | |
-xxxx22 0(1)10112 MOV(B) R1, (R2) ;   | |
-xxxx24 0(1)10112 MOV(B) R1, (R2) ;   | |
-xxxx26 0(1)10112 MOV(B) R1, (R2) ;   | |
-xxxx30 0(1)10112 MOV(B) R1, (R2) ;   | |
-xxxx32    077111 SOB    R1, 11   ;---+ |
-xxxx34    077015 SOB    R0, 15   ;-----+
-xxxx36    000000 HALT
+xxxx00     012700  MOV    #100, R0 ;
+xxxx02     000100                  ;
+xxxx04     005001  CLR    R1       ; <---+
+xxxx06     012702  MOV    #1100,R2 ;     |
+xxxx10     001100/170000           ;     |
+xxxx12  0(1)10112  MOV(B) R1, (R2) ; <-+ |
+xxxx14  0(1)10112  MOV(B) R1, (R2) ;   | |
+xxxx16  0(1)10112  MOV(B) R1, (R2) ;   | |
+xxxx20  0(1)10112  MOV(B) R1, (R2) ;   | |
+xxxx22  0(1)10112  MOV(B) R1, (R2) ;   | |
+xxxx24  0(1)10112  MOV(B) R1, (R2) ;   | |
+xxxx26  0(1)10112  MOV(B) R1, (R2) ;   | |
+xxxx30  0(1)10112  MOV(B) R1, (R2) ;   | |
+xxxx32     077111  SOB    R1, 11   ;---+ |
+xxxx34     077015  SOB    R0, 15   ;-----+
+xxxx36     000000  HALT            ;
 ```
 Время выполнения теста:
 
