@@ -46,7 +46,7 @@ xxxx36     000000  HALT            ;
 ```
 Время выполнения теста:
 
-length |  8 Mhz  | 10MHz ext |  8 MHz  | 10MHz ext
+length |  8 Mhz  |   10MHz   |8 MHz SRAM| 10MHz SRAM
 -------|---------|-----------|---------|-----------
 word   | 152 sec | 120 sec   | 97 sec  | 77 sec
 byte   | 193 sec | 162 sec   | 121 sec | 97 sec
