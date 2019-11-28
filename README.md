@@ -3,7 +3,7 @@ Hardware extensions for UKNC (Soviet PDP-11 compatible machine)
 
 Коллекция аппаратных дополнений для ПК [Электроника МС 0511(УКНЦ)](https://ru.wikipedia.org/wiki/%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%B8%D0%BA%D0%B0_%D0%9C%D0%A1_0511).
 
-**mc0511_05.pdf** - схема самого ПК, взято с сайта [micklab.ru](http://micklab.ru/MC0511.htm)
+**[mc0511_05.pdf](http://micklab.ru/MC0511.htm)** - схема самого ПК, взято с сайта [micklab.ru](http://micklab.ru/MC0511.htm)
 
 ## ay_and_dac_vm1
 Реализация подключеня звукогенератора AY-3-8910 и двухканального ЦАП'а.
@@ -22,9 +22,9 @@ Hardware extensions for UKNC (Soviet PDP-11 compatible machine)
 
 Несмотря на то что RT-11 может использовать дополнительную память (по умолчанию верхняя граница 0170000), драйвера, часть кода которых исполняется ПП не работают, из за того что ПП не имеет доступа к дополнительной памяти.
 
-Для использования таких драйверов необходимо установить вехний адрес RT-11 0160000 (должен быть кратен 04000).
-Либо используя системную утилиту `SIPP` (предварительно найдя в файле `RTSJ.MAP` адрес на который указывает символ `..28KW`, подробнее в [RT-11 Installation Guide](http://bitsavers.informatik.uni-stuttgart.de/pdf/dec/pdp11/rt11/v5.6_Aug91/AA-H376F-TC_RT-11_Installation_Guide_Aug91.pdf) п. 2.6.20). После этого необходимо вновь прописать загрузчик коммандой `COPY/BOOT:HX HX0:RT11SJ HX0:`
-Либо воспользоваться сторонней утилитой [`SYSTOP`](https://zx-pk.ru/threads/10718-soft-dlya-dvk-pdp11.html?p=932386&viewfull=1#post932386). 
+Для использования таких драйверов необходимо установить вехний адрес RT-11 равным 0160000 (должен быть кратен 04000).
+Можно воспользоваться системной утилитой `SIPP` (предварительно найдя в файле `RTSJ.MAP` адрес на который указывает символ `..28KW`, подробнее в [RT-11 Installation Guide](http://bitsavers.informatik.uni-stuttgart.de/pdf/dec/pdp11/rt11/v5.6_Aug91/AA-H376F-TC_RT-11_Installation_Guide_Aug91.pdf) п. 2.6.20). После этого необходимо будет вновь прописать загрузчик коммандой `COPY/BOOT:HX HX0:RT11SJ HX0:`
+Либо с помощью сторонней утилиты [`SYSTOP`](https://zx-pk.ru/threads/10718-soft-dlya-dvk-pdp11.html?p=932386&viewfull=1#post932386). 
 
 ### Тест скорости записи в память:
 ```
