@@ -23,8 +23,9 @@ Hardware extensions for UKNC (Soviet PDP-11 compatible machine)
 Несмотря на то что RT-11 может использовать дополнительную память (по умолчанию верхняя граница `0170000`), драйвера устройств подключенных к ПП не работают(`MZ` и `WD`), из за того что со стороны ПП, адреса ОЗУ ЦП выше `0160000` это ОЗУ режима HALT.
 
 Для использования таких драйверов необходимо установить вехний адрес RT-11 равным `0160000` (должен быть кратен `04000`).
-Можно воспользоваться системной утилитой `SIPP` (предварительно найдя в файле `RTSJ.MAP` адрес на который указывает символ `..28KW`, подробнее в [RT-11 Installation Guide](http://bitsavers.informatik.uni-stuttgart.de/pdf/dec/pdp11/rt11/v5.6_Aug91/AA-H376F-TC_RT-11_Installation_Guide_Aug91.pdf) п. 2.6.20). После этого необходимо будет вновь прописать загрузчик коммандой `COPY/BOOT:HX HX0:RT11SJ MZ0:`
-Либо с помощью сторонней утилиты [`SYSTOP`](https://zx-pk.ru/threads/10718-soft-dlya-dvk-pdp11.html?p=932386&viewfull=1#post932386). 
+Можно воспользоваться системной утилитой `SIPP` (предварительно найдя в файле `RTSJ.MAP` адрес на который указывает символ `..28KW`, подробнее в [RT-11 Installation Guide](http://bitsavers.informatik.uni-stuttgart.de/pdf/dec/pdp11/rt11/v5.6_Aug91/AA-H376F-TC_RT-11_Installation_Guide_Aug91.pdf) п. 2.6.20). 
+Либо с помощью сторонней утилиты [`SYSTOP`](https://zx-pk.ru/threads/10718-soft-dlya-dvk-pdp11.html?p=932386&viewfull=1#post932386).
+После установки верхней границы, необходимо вновь прописать загрузчик коммандой `COPY/BOOT:MZ MZ0:RT11SJ MZ0:`
 
 ### Тест скорости записи в память:
 ```
